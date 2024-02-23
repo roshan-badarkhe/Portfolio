@@ -1,10 +1,13 @@
 import "./styles.css";
-
+import NavBar, { item } from "./Components/NavBar";
+import { Outlet, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer"
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <NavBar />
+      <Outlet />
+      <Footer/>
     </div>
   );
 }
